@@ -24,6 +24,8 @@ This program takes a set of Skyscraper puzzle constraints as input and outputs a
 - Numbers represent building heights (1 = shortest, 4 = tallest).
 - The clues indicate how many buildings are visible from that direction.
 
+![Skyscraper Puzzle](images/Skyscraper.png)
+
 ## How It Works
 
 The solver uses a recursive backtracking algorithm to:
@@ -31,8 +33,6 @@ The solver uses a recursive backtracking algorithm to:
 2. Check that numbers are unique in their row and column.
 3. Verify the solution matches all visibility constraints.
 4. Return the first valid solution found.
-
-![Skyscraper Puzzle](images/Skyscraper.png)
 
 ## Installation
 
