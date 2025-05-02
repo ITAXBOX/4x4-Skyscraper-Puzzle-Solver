@@ -11,6 +11,7 @@ A C program that solves 4x4 Skyscraper puzzles using backtracking.
 - [Examples](#examples)
 - [File Structure](#file-structure)
 - [Algorithm](#algorithm)
+- [Makefile](#makefile)
 - [Limitations](#limitations)
 - [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
@@ -79,6 +80,7 @@ The input must be a single string of 16 numbers (1-4) separated by spaces, repre
 ├── valid.c       # Input validation functions
 ├── solve.c       # Backtracking solver implementation
 ├── check.c       # Constraint checking functions
+├── MakeFile      # Build automation file
 └── README.md     # This documentation
 ```
 
@@ -95,6 +97,61 @@ The input must be a single string of 16 numbers (1-4) separated by spaces, repre
 ### Constraint Checking:
 - For each row/column, count visible skyscrapers from both directions.
 - Verify counts match the input clues.
+
+## Makefile
+
+This project includes a `Makefile` to simplify the build process. Below are the available targets and their descriptions:
+
+### Targets
+
+- **`all`**: Builds the executable `skyscraper` from the source files.
+    ```bash
+    make
+    ```
+
+- **`clean`**: Removes all object files (`.o`) generated during the build process.
+    ```bash
+    make clean
+    ```
+
+- **`fclean`**: Removes all object files and the executable `skyscraper`.
+    ```bash
+    make fclean
+    ```
+
+- **`re`**: Cleans the build artifacts and rebuilds the project from scratch.
+    ```bash
+    make re
+    ```
+
+- **`test`**: Builds the project and runs predefined test cases.
+    ```bash
+    make test
+    ```
+
+### Usage
+
+To build the project, simply run:
+```bash
+make
+```
+
+To clean up build artifacts:
+```bash
+make clean
+```
+
+To rebuild the project:
+```bash
+make re
+```
+
+To run test cases:
+```bash
+make test
+```
+
+The `Makefile` ensures efficient compilation and provides a convenient way to manage the build process.
 
 ## Limitations
 
