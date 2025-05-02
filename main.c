@@ -4,6 +4,18 @@
 int valid(char *str);
 int solve(int *input, int ***result);
 
+void ft_putchar(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+}
+
 void print(int **str)
 {
 	int i;
@@ -44,9 +56,9 @@ void fill(int *input, char *str)
 	}
 }
 
-int error(void)
+int error(char *str)
 {
-	write(2, "Error\n", 6);
+	ft_putchar(str);
 	return (1);
 }
 
@@ -85,11 +97,11 @@ int main(int argc, char **argv)
 			else
 			{
 				free_all(result, input);
-				return (error());
+				return (error("No Solution!"));
 			}
 			free_all(result, input);
 			return (0);
 		}
 	}
-	return (error());
+	return (error("Invalid Input!"));
 }
