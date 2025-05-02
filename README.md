@@ -32,6 +32,8 @@ The solver uses a recursive backtracking algorithm to:
 3. Verify the solution matches all visibility constraints.
 4. Return the first valid solution found.
 
+![Skyscraper Puzzle](images/skyscraper.png)
+
 ## Installation
 
 1. Clone the repository:
