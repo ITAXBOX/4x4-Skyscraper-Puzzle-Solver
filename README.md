@@ -51,7 +51,7 @@ The solver uses a recursive backtracking algorithm to:
 
 Run the program with the input constraints as a single string:
 ```bash
-./skyscraper "1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
+./skyscraper "2 2 1 2 3 1 4 2 3 1 2 2 2 3 1 2"
 ```
 
 ## Input Format
@@ -64,14 +64,14 @@ The input must be a single string of 16 numbers (1-4) separated by spaces, repre
 
 ### Example Input:
 ```plaintext
-"1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
+"2 2 1 2 3 1 4 2 3 1 2 2 2 3 1 2"
 ```
 
 ## Examples
 
 ### Simple Puzzle:
 ```bash
-./skyscraper "1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4"
+./skyscraper "2 2 1 2 3 1 4 2 3 1 2 2 2 3 1 2"
 ```
 
 ## File Structure
